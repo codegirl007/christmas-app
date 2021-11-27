@@ -1,13 +1,15 @@
 import React, {useState} from "react";
 import Map from "../Map";
-import { ChristmasDialog } from "../Dialog/Dialog";
+import { ChristmasDialog } from "../Dialog/ChristmasDialog";
+import { useNavigate } from "react-router-dom";
 
 const MainPage = ({data}) => {
   const [dialogOpen, setDialogOpen] = useState(false);
-
+  const navigate = useNavigate();
+  
   const handleCountryClick = (value) => {
+    navigate(value)
     setDialogOpen(!dialogOpen);
-    console.log('calling from mainpage', value)
   }
 
   const handleCloseDialog = () => {
@@ -16,8 +18,8 @@ const MainPage = ({data}) => {
   
   return (
     <>
-    <Map handleCountryClick={handleCountryClick} data={data}/>
-    <ChristmasDialog dialogOpen={dialogOpen} onCloseDialog={handleCloseDialog}/>
+      <Map handleCountryClick={handleCountryClick} data={data}/>
+      <ChristmasDialog dialogOpen={dialogOpen} onCloseDialog={handleCloseDialog}/>
     </>
   )
 }
