@@ -1,30 +1,15 @@
 import React from 'react';
 import WorldMap from 'react-svg-worldmap';
 
-const Map = ({handleCountryClick}) => {
-  const data = [
-    {country: 'cn', value: "test" },
-    {country: 'in', value: "test" },
-    {country: 'us', value: "test" },
-    {country: 'id', value: "test" },
-    {country: 'pk', value: "test" },
-    {country: 'br', value: "test" },
-    {country: 'ng', value: "test" },
-    {country: 'bd', value: "test" },
-    {country: 'ru', value: "test" },
-    {country: 'mx', value: "test" },
-  ];
+const Map = ({handleCountryClick, data}) => {
 
-  // function value
-  // color: "green"
-  // countryCode: "RU"
-  // countryName: "Russia"
-  // countryValue: 1
-  // event: SyntheticBaseEvent {_reactName: 'onClick', _targetInst: null, type: 'click', nativeEvent: PointerEvent, target: path, …}
-  // maxValue: 1
-  // minValue: 1
-  // prefix: ""
-  // suffix: ""
+  const mapData = data.map((item) => {
+    return (
+      {
+        country:(item.countryCode),
+        value: 'Christmas'
+      }
+    )});
 
   const onCountryClick = (value) => {
     handleCountryClick(value.countryCode)
@@ -36,7 +21,7 @@ const Map = ({handleCountryClick}) => {
       color="green"
       value-suffix="people"
       size="lg"
-      data={data}
+      data={mapData}
       richInteraction
       onClickFunction={onCountryClick}
       valuePrefix=" - "
