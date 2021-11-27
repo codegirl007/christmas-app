@@ -16,7 +16,6 @@ import fr from "../../assets/images/fr-image.jpg";
 import au from "../../assets/images/au-image.jpg";
 import fi from "../../assets/images/fi-image.jpg";
 import gb from "../../assets/images/gb-image.jpg";
-
 import bd from "../../assets/images/bd-image.jpg";
 import br from "../../assets/images/br-image.jpg";
 import cn from "../../assets/images/cn-image.jpg";

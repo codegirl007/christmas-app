@@ -17,7 +17,7 @@ const Map = ({ handleCountryClick, data }) => {
     <WorldMap
       color="#0894F1"
       value-suffix="people"
-      size="lg"
+      size="xxl"
       data={mapData}
       richInteraction
       onClickFunction={onCountryClick}

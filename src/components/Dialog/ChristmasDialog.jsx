@@ -14,7 +14,7 @@ import choir from "../../assets/icons/choir.png";
 import jesus from "../../assets/icons/jesus.png";
 import language from "../../assets/icons/language.png";
 import "./Dialog.css";
-import Image from '../Image'
+import Image from "../Image";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -35,13 +35,23 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, countryCode}) => {
+export const ChristmasDialog = ({
+  dialogOpen,
+  onCloseDialog,
+  url,
+  countryCode,
+}) => {
   const classes = useStyles();
-  console.log("dialog component", countryCode)
+  console.log("dialog component", countryCode);
 
   return (
     <>
-      <Dialog open={dialogOpen} onClose={onCloseDialog} className="dialog-body">
+      <Dialog
+        open={dialogOpen}
+        onClose={onCloseDialog}
+        className="dialog-body"
+        maxWidth="xs"
+      >
         <div className="dialog-container">
           <DialogTitle className="dialog-header">
             <Typography>Czech Republic, CZ</Typography>
@@ -68,10 +78,8 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, countryCode}) =
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">Traditional dish</p>
-                  <p className="fact-text">
-                    Carp and Potato Salad
-                  </p>
-                  </div>
+                  <p className="fact-text">Carp and Potato Salad</p>
+                </div>
               </div>
               <div className="fact">
                 <div className="img-container">
@@ -79,10 +87,8 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, countryCode}) =
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">When are Christmas celebrated</p>
-                  <p className="fact-text">
-                    December 24
-                  </p>
-                  </div>
+                  <p className="fact-text">December 24</p>
+                </div>
               </div>
               <div className="fact">
                 <div className="img-container">
@@ -90,10 +96,8 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, countryCode}) =
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">How to say Merry Christmas!</p>
-                  <p className="fact-text">
-                    Veselé Vánoce!
-                  </p>
-                  </div>
+                  <p className="fact-text">Veselé Vánoce!</p>
+                </div>
               </div>
               <div className="fact-row">
                 <div className="img-container">
@@ -102,8 +106,8 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, countryCode}) =
                 <div className="fact-content">
                   <p className="fact-label">Traditions</p>
                   <p className="fact-text">
-                  The Floating of Walnut Shells, The Cutting of the Apple, The
-                  Pouring of Lead, Fish Scales under the Plate
+                    The Floating of Walnut Shells, The Cutting of the Apple, The
+                    Pouring of Lead, Fish Scales under the Plate
                   </p>
                 </div>
               </div>
@@ -111,16 +115,16 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, countryCode}) =
                 <div className="img-container img-container--carol">
                   <img className="fact-image" src={choir} alt="carol" />
                 </div>
-                  <AudioPlayer
-                    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-                    width="60%"
-                    height="0%"
-                  />
+                <AudioPlayer
+                  src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                  width="100%"
+                  height="0%"
+                />
               </div>
-              </div>
-              <div className="country-image">
-                <Image countryCode={countryCode} />
-              </div>
+            </div>
+            <div className="country-image">
+              <Image countryCode={countryCode} />
+            </div>
           </DialogContent>
           <footer className={classes.footer}>
             <FacebookShareButton url={url}>

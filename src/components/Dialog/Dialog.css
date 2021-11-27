@@ -17,7 +17,7 @@
   grid-gap: 0.5rem;
   width: 100%;
   height: 100%;
-  padding: 1rem 0;
+  padding: 0.1rem 0;
 }
 
 .dialog-header {
@@ -32,6 +32,7 @@
 
 .fact {
   display: flex;
+  padding: 0.3rem;
 }
 
 .fact-row {
@@ -39,6 +40,7 @@
   grid-column-end: 3;
   display: flex;
   position: relative;
+  padding: 0.3rem;
 }
 
 .fact-row--carol {
@@ -46,25 +48,26 @@
 }
 
 .fact-content {
-  padding: 0.2rem 1rem;
+  padding: 0.1rem 0.5rem;
 }
 
 .fact-label {
-  font-size: 0.7rem;
+  font-size: 0.4rem;
   font-weight: 400;
 }
 
 .fact-text {
-  font-size: 0.825rem;
+  font-size: 0.6rem;
   font-weight: 600;
+  max-width: 16rem;
 }
 
 .img-container {
   background-color: #0894f1;
   border-radius: 0.75rem;
   display: flex;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -75,8 +78,8 @@
 }
 
 .fact-image {
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 2rem;
+  height: 2em;
 }
 
 .country-image {
