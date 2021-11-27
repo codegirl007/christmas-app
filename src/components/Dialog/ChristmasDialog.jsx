@@ -23,7 +23,7 @@ import {
   TwitterShareButton,
   TwitterIcon,
 } from "react-share";
-import AudioPlayer from "material-ui-audio-player";
+import Audio from "../Audio";
 
 const useStyles = makeStyles(() => ({
   footer: {
@@ -35,14 +35,8 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const ChristmasDialog = ({
-  dialogOpen,
-  onCloseDialog,
-  url,
-  countryCode,
-}) => {
+export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
   const classes = useStyles();
-  console.log("dialog component", countryCode);
 
   return (
     <>
@@ -54,7 +48,9 @@ export const ChristmasDialog = ({
       >
         <div className="dialog-container">
           <DialogTitle className="dialog-header">
-            <Typography>Czech Republic, CZ</Typography>
+            <Typography>
+              {country.countryName}, {country.countryCode}
+            </Typography>
             <IconButton onClick={onCloseDialog} className="close-button">
               <CloseIcon />
             </IconButton>
@@ -67,9 +63,7 @@ export const ChristmasDialog = ({
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">Who brings presents</p>
-                  <p className="fact-text">
-                    Jezisek (Baby Jesus) is a Christmas gift-giving figure
-                  </p>
+                  <p className="fact-text">{country.giver}</p>
                 </div>
               </div>
               <div className="fact">
@@ -78,7 +72,7 @@ export const ChristmasDialog = ({
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">Traditional dish</p>
-                  <p className="fact-text">Carp and Potato Salad</p>
+                  <p className="fact-text">{country.dish}</p>
                 </div>
               </div>
               <div className="fact">
@@ -87,7 +81,7 @@ export const ChristmasDialog = ({
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">When are Christmas celebrated</p>
-                  <p className="fact-text">December 24</p>
+                  <p className="fact-text">{country.date}</p>
                 </div>
               </div>
               <div className="fact">
@@ -96,7 +90,7 @@ export const ChristmasDialog = ({
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">How to say Merry Christmas!</p>
-                  <p className="fact-text">Veselé Vánoce!</p>
+                  <p className="fact-text">{country.greet}</p>
                 </div>
               </div>
               <div className="fact-row">
@@ -105,26 +99,21 @@ export const ChristmasDialog = ({
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">Traditions</p>
-                  <p className="fact-text">
-                    The Floating of Walnut Shells, The Cutting of the Apple, The
-                    Pouring of Lead, Fish Scales under the Plate
-                  </p>
+                  {country.tradition.map((item, index) => (
+                    <p key={index} className="fact-text">{item}</p>
+                  ))}
                 </div>
               </div>
               <div className="fact-row fact-row--carol">
                 <div className="img-container img-container--carol">
                   <img className="fact-image" src={choir} alt="carol" />
                 </div>
-                <AudioPlayer
-                  src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-                  width="100%"
-                  height="0%"
-                />
+                  <Audio countryCode={country.countryCode}/>
               </div>
-            </div>
-            <div className="country-image">
-              <Image countryCode={countryCode} />
-            </div>
+              </div>
+              <div className="country-image">
+                <Image countryCode={country.countryCode} />
+              </div>
           </DialogContent>
           <footer className={classes.footer}>
             <FacebookShareButton url={url}>
