@@ -7,10 +7,10 @@ import jesus from "../../assets/icons/jesus.png";
 import language from "../../assets/icons/language.png";
 import "./Dialog.css";
 
-export const ChristmasDialog = () => {
+export const ChristmasDialog = ({dialogOpen, onCloseDialog}) => {
   return (
     <>
-      <Dialog open={true} className="dialog-body">
+      <Dialog open={dialogOpen} onClose={onCloseDialog} className="dialog-body">
         <DialogTitle className="dialog-header">Czech Republic, CZ</DialogTitle>
         <DialogContent className="dialog-content">
           <div className="fact">

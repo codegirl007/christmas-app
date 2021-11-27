@@ -2,7 +2,6 @@ import React from "react";
 import './style.css'
 
 const Layout = ({children}) => {
-  console.log('ahoj!')
   return (
     <div className="app-wrapper"> 
       <header className="app-header"> App Header</header>
