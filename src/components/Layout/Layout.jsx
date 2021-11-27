@@ -1,5 +1,15 @@
-// import React from "react";
+import React from "react";
+import './style.css'
 
-export const Layout = () => {
+const Layout = ({children}) => {
   console.log('ahoj!')
+  return (
+    <div className="app-wrapper"> 
+      <header className="app-header"> App Header</header>
+      <main className="app-content">{children}</main>
+      <footer className="app-footer">App footer</footer>
+    </div>
+  )
 }
+
+export default Layout
