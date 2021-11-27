@@ -30,7 +30,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const ChristmasDialog = ({dialogOpen, onCloseDialog}) => {
+export const ChristmasDialog = ({dialogOpen, onCloseDialog, url}) => {
   const classes = useStyles();
   return (
     <>
@@ -66,13 +66,13 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog}) => {
           <div className="social-media"></div>
         </DialogContent>
         <footer className={classes.footer}>
-          <FacebookShareButton url="https://www.seznam.cz/">
+          <FacebookShareButton url={url}>
             <FacebookIcon round={true} />
           </FacebookShareButton>
-          <LinkedinShareButton url="https://www.seznam.cz/">
+          <LinkedinShareButton url={url}>
             <LinkedinIcon round={true} />
           </LinkedinShareButton>
-          <TwitterShareButton url="https://www.seznam.cz/">
+          <TwitterShareButton url={url}>
             <TwitterIcon round={true} />
           </TwitterShareButton>
         </footer>
