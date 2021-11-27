@@ -4,7 +4,6 @@ import MainPage from './components/MainPage'
 import countries from './assets/data/data.json';
 import "./App.css";
 
-
 function App() {
   return (
     <div className="App">
