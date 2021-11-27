@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Map from "../Map";
-import { ChristmasDialog } from "../Dialog/Dialog";
+import { ChristmasDialog } from "../Dialog/ChristmasDialog";
 import { useNavigate } from "react-router-dom";
 
 const MainPage = ({data}) => {
@@ -18,8 +18,8 @@ const MainPage = ({data}) => {
   
   return (
     <>
-    <Map handleCountryClick={handleCountryClick} data={data}/>
-    <ChristmasDialog dialogOpen={dialogOpen} onCloseDialog={handleCloseDialog}/>
+      <Map handleCountryClick={handleCountryClick} data={data}/>
+      <ChristmasDialog dialogOpen={dialogOpen} onCloseDialog={handleCloseDialog}/>
     </>
   )
 }
