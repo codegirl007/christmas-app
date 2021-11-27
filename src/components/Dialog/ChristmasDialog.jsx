@@ -23,7 +23,7 @@ import {
   TwitterShareButton,
   TwitterIcon,
 } from "react-share";
-import AudioPlayer from "material-ui-audio-player";
+import Audio from "../Audio";
 
 const useStyles = makeStyles(() => ({
   footer: {
@@ -103,11 +103,11 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
                 <div className="img-container img-container--carol">
                   <img className="fact-image" src={choir} alt="carol" />
                 </div>
-                <AudioPlayer
-                  src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-                  width="60%"
-                  height="0%"
-                />
+                  <Audio countryCode={country.countryCode}/>
+              </div>
+              </div>
+              <div className="country-image">
+                <Image countryCode={country.countryCode} />
               </div>
             </div>
             <div className="country-image">
