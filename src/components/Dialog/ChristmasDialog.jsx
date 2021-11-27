@@ -109,10 +109,6 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
               <div className="country-image">
                 <Image countryCode={country.countryCode} />
               </div>
-            </div>
-            <div className="country-image">
-              <Image countryCode={country.countryCode} />
-            </div>
           </DialogContent>
           <footer className={classes.footer}>
             <FacebookShareButton url={url}>
