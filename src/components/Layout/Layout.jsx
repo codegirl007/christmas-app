@@ -6,7 +6,11 @@ const Layout = ({ children }) => {
   return (
     <div className="app-wrapper">
       <header className="app-header">
-        Christmas Facts App <Countdown />
+        <span>Christmas Facts App</span>
+        <span className="countdown"> 
+          <span>Christmas countdown: </span>
+          <Countdown />
+        </span>
       </header>
       <main className="app-content">{children}</main>
       <footer className="app-footer">

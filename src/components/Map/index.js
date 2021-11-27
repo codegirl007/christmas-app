@@ -5,7 +5,7 @@ const Map = ({ handleCountryClick, data }) => {
   const mapData = data.map((item) => {
     return {
       country: item.countryCode,
-      value: "Christmas",
+      value: "Christmas facts",
     };
   });
 
