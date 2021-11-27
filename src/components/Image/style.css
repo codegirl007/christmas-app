@@ -1,6 +1,6 @@
 .custom-image {
   display: block;
-  width: 100%;
+  width: 70%;
   aspect-ratio: 4/3;
   object-fit: cover;
 }
