@@ -14,7 +14,9 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--green);  
+  background-color: #0894f1;
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 1.5rem;
 }
 
 .app-content {
@@ -31,5 +33,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--green);
+  background-color: #0894f1;
+  font-size: 0.8rem;
+}
+
+.copy {
+  font-weight: bold;
 }
