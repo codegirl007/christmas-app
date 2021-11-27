@@ -1,6 +1,5 @@
-import React from 'react';
-import './style.css'
-
+import React from "react";
+import "./style.css";
 
 import mx from "../../assets/images/mx-image.jpg";
 import ng from "../../assets/images/ng-image.jpg";
@@ -62,5 +61,3 @@ const Image = ({countryCode}) => {
     <img className="custom-image"src={Img} alt={`christmas in ${countryCode}`}/>
   )
 }
-
-export default Image;
