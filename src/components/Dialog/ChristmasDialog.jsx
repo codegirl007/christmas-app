@@ -94,8 +94,8 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">Traditions</p>
-                  {country.tradition.map((item) => (
-                    <p className="fact-text">{item}</p>
+                  {country.tradition.map((item, index) => (
+                    <p key={index} className="fact-text">{item}</p>
                   ))}
                 </div>
               </div>

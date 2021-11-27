@@ -9,19 +9,18 @@ const MainPage = ({ data }) => {
   const location = useLocation();
   const url = `http://localhost:3000/#${location.pathname}`;
   const isDialogOpen = location.pathname === "/" ? false : true;
-  const defaultCountryCode = location.pathname.slice(-2);
-  const [countryCode, setCountryCode] = useState(defaultCountryCode);
+  const urlCountryCode =  isDialogOpen ? location.pathname.slice(-2) : null;
+
   const [dialogOpen, setDialogOpen] = useState(isDialogOpen);
-  const [country, setCountry] = useState(null);
+  const [country, setCountry] = useState(urlCountryCode ? findCountry(urlCountryCode) : null);
 
   const handleCountryClick = (value) => {
-    setCountryCode(value);
     navigate(value);
     setCountry(findCountry(value));
     setDialogOpen(true);
   };
 
-  const findCountry = (code) => {
+  function findCountry(code){
     const foundCountry = data.find((item) => item.countryCode === code);
     return foundCountry;
   };
@@ -34,7 +33,7 @@ const MainPage = ({ data }) => {
   return (
     <>
       <Map handleCountryClick={handleCountryClick} data={data} />
-      {country?.countryCode && (
+      {country && (
         <ChristmasDialog
           dialogOpen={dialogOpen}
           onCloseDialog={handleCloseDialog}
