@@ -2,8 +2,11 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
+  Typography,
+  IconButton,
   makeStyles,
 } from "@material-ui/core";
+import CloseIcon from "@material-ui/icons/Close";
 import gift from "../../assets/icons/gift.png";
 import dinner from "../../assets/icons/dinner.png";
 import calendar from "../../assets/icons/calendar.png";
@@ -38,7 +41,10 @@ export const ChristmasDialog = ({ dialogOpen, onCloseDialog, url }) => {
       <Dialog open={dialogOpen} onClose={onCloseDialog} className="dialog-body">
         <div className="dialog-container">
           <DialogTitle className="dialog-header">
-            Czech Republic, CZ
+            <Typography>Czech Republic, CZ</Typography>
+            <IconButton onClick={onCloseDialog} className="close-button">
+              <CloseIcon />
+            </IconButton>
           </DialogTitle>
           <DialogContent className="dialog-content">
             <div className="fact">
