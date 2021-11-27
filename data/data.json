@@ -1,0 +1,308 @@
+[
+  {
+    "countryName": "Czech Republic",
+    "countryCode": "CZ",
+    "giver": "Jezisek (Baby Jesus) is a Christmas gift-giving figure",
+    "date": "Dec 24",
+    "greet": "Veselé Vánoce",
+    "tradition": [
+      "The Floating of Walnut Shells",
+      "The Cutting of the Apple",
+      "The Pouring of Lead, Fish Scales under the Plate"
+    ],
+    "dish": "Carp and Potato Salad"
+  },
+  {
+    "countryName": "Japan",
+    "countryCode": "JP",
+    "giver": "Santa-san is bringing gifts to children",
+    "date": "Dec 25",
+    "greet": "[merí kurisumasu]",
+    "tradition": [
+      "Holiday for lovers not so much for family",
+      "Celebration in KFC food chain",
+      "Famous Japanese Christmas Lighting Decoration in City"
+    ],
+    "dish": "Kentucky Fried Chicken, Strawberry Christmas Cake with White Cream for Dessert"
+  },
+  {
+    "countryName": "Brazil",
+    "countryCode": "BR",
+    "giver": "Papai Noel is bringing gifts around midnight",
+    "date": "Dec 25",
+    "greet": "Feliz Natal",
+    "tradition": [
+      "The Persepio - Nativity Scene Sets at home and infront of church",
+      "Going to Missa do Galo - Mass of the Roster in Church"
+    ],
+    "dish": "Baked Turkey with rice and raisins"
+  },
+  {
+    "countryName": "Venezuela",
+    "countryCode": "VE",
+    "giver": "San Nicolas",
+    "date": "Dec 25",
+    "greet": "Feliz Navidad",
+    "tradition": [
+      "The Firework Shows",
+      "Listening to Gaita music - Venezuelan Christmas music: strings, drums, tube",
+      "Traditional Christmas Rollerskating demands closing traffic"
+    ],
+    "dish": "Hallacas: beef, pork, chicken, caper, raisins, olives in leaves"
+  },
+  {
+    "countryName": "Ukraine",
+    "countryCode": "UA",
+    "giver": "St Nicholas is visiting children on 19th December",
+    "date": "Jan 7",
+    "greet": "Veseloho Rizdva",
+    "tradition": [
+      "Fast during the day till first star in sky",
+      "Didukh decoration of sheaf of wheat",
+      "Christmas Trees decorated with artificial spider's web"
+    ],
+    "dish": "Holy Supper with 12 dishes and 12 disciples: sweet wheat porridge kutia, beet soup borsch, cabbage buns"
+  },
+  {
+    "countryName": "Egypt",
+    "countryCode": "EG",
+    "giver": "Baba Noël is Egyptian Santa climbing through window with presents",
+    "date": "Jan 7",
+    "greet": "Eid Milad Majid",
+    "tradition": [
+      "The Holy Nativity Fast: Vegan Diet from 25 Nov to 6 Jan",
+      "Eating 'kahk' sweet biscuits with friends and families"
+    ],
+    "dish": "'Fata' a lamb soup which contains bread, rice, garlic and boiled lamb meat"
+  },
+  {
+    "countryName": "Madagascar",
+    "countryCode": "MG",
+    "giver": "Dadabe Noely is Santa Claus",
+    "date": "Dec 25",
+    "greet": "Tratra ny Noely",
+    "tradition": ["Exchanging only small presents", "Decorating Pine Trees"],
+    "dish": "Fresh lychees and Chicken or Pork with rice followed by a special cake"
+  },
+  {
+    "countryName": "India",
+    "countryCode": "IN",
+    "giver": "Christmas Baba",
+    "date": "Dec 25",
+    "greet": "Śubh krisamas",
+    "tradition": [
+      "The Midnight Mass",
+      "The Banana or Mango tree is decorated instead of Christmas Trees",
+      "Putting small oil burning clay lamps on the flat roofs",
+      "Hanging out giant paper star lanterns"
+    ],
+    "dish": "Allahabadi cake, candy canes, plum cakes"
+  },
+  {
+    "countryName": "China",
+    "countryCode": "CN",
+    "giver": "'Shen Dan Lao Ren' is Chinese Santa",
+    "date": "Dec 25",
+    "greet": "Sheng Dan Kuai Le",
+    "tradition": [
+      "The Christmas Parties and Christmas Dates",
+      "Giving Apples - in Mandarin language apple sounds like peace",
+      "The Pouring of Lead, Fish Scales under the Plate"
+    ],
+    "dish": "Turkey, Chinese dumplings, spring rolls, rice"
+  },
+  {
+    "countryName": "Bangladesh",
+    "countryCode": "BD",
+    "giver": "Santa Claus",
+    "date": "Dec 25",
+    "greet": "Shuvo bôṛodin",
+    "tradition": [
+      "Exchanging Christmas Cards",
+      "Decorating buildings with small paper triangles 'Nishan'",
+      "Singing 'kirtan' song which is getting faster"
+    ],
+    "dish": "'Pitha' (sweet rice cakes made of rice flour, milk, coconut and molasses) and 'Payesh' (rice pudding)"
+  },
+  {
+    "countryName": "Vatican",
+    "countryCode": "VA",
+    "giver": "La Befana - an old witch",
+    "date": "Dec 24",
+    "greet": "Buon Natale!",
+    "tradition": [
+      "Midnight mass inside St. Peter’s Basilica",
+      "Christmas Concert for charitable purposes",
+      "Huge Christmas tree and a life-size nativity scene at St. Peter’s Square"
+    ],
+    "dish": "Panettone - sweet bread pastry"
+  },
+  {
+    "countryName": "Greenland",
+    "countryCode": "GL",
+    "giver": "Santa Claus, who lives here during year",
+    "date": "Dec 24",
+    "greet": "Juullimi Pilluarit",
+    "tradition": [
+      "Who finds almonds in the rice pudding will receive a small gift",
+      "Red-orange Christmas stars in almost all the windows",
+      "On Christmas nights men serve women their food and also pour them coffee"
+    ],
+    "dish": "Roast pork and duck"
+  },
+  {
+    "countryName": "Sweden",
+    "countryCode": "SE",
+    "giver": "Jultomten",
+    "date": "Dec 24",
+    "greet": "Buorit Juovllat",
+    "tradition": [
+      "The goat Yule, made by hand with straw and red ropes is transformed into a huge bright bonfire"
+    ],
+    "dish": "Julbord"
+  },
+  {
+    "countryName": "France",
+    "countryCode": "FR",
+    "giver": "Père Noël",
+    "date": "Dec 25",
+    "greet": "Joyeux Noël",
+    "tradition": ["The use of the mistletoe considered to bring good luck"],
+    "dish": "Truffles, Rabbit terrine"
+  },
+  {
+    "countryName": "Greece",
+    "countryCode": "GR",
+    "giver": "Aghios Vasilis",
+    "date": "Dec 25",
+    "greet": "Καλά Χριστούγεννα",
+    "tradition": ["Decorated boats", "Singing carols"],
+    "dish": "Roasted pork and honey cookies"
+  },
+  {
+    "countryName": "Russia",
+    "countryCode": "RU",
+    "giver": "Дед Мороз (Grandfather Frost)",
+    "date": "Jan 7",
+    "greet": "С Рождеством Христовым!",
+    "tradition": [
+      "New Year in Russia is celebrated similarly to European Christmas, with gift giving and family gathering",
+      "January 7th is orthodox religious celebration",
+      "Orthodox church celebrates Christmas on a different date because they use 'Julian' calendar"
+    ],
+    "dish": "Kutia - grain dish eathen together to symbolize unity"
+  },
+  {
+    "countryName": "Poland",
+    "countryCode": "RU",
+    "giver": "depending on region:  Swiety Mikolaj (St. Nicholas), Dziadek Mróz (Ded Moroz/Grandfather Frost), Gwiazdor (the Starman), Dzieciątko (the Baby Jesus), Aniołek (Little Angel), Gwiazdka (Little Star)",
+    "date": "Dec 24",
+    "greet": "Wesołych Świąt Bożego Narodzenia!",
+    "tradition": [
+      "Hay is spread beneath the tablecloth as a reminder that Christ was born in a manger",
+      "January 7th is orthodox religious celebration",
+      "Orthodox church celebrates christmas on a different date because they use 'Julian' calendar"
+    ],
+    "dish": "Fried carp and barszcz (beetroot soup)"
+  },
+  {
+    "countryName": "United Kingdom",
+    "countryCode": "GB",
+    "giver": "Father Christmas",
+    "date": "Dec 25",
+    "greet": "Merry Christmas!",
+    "tradition": [
+      "Christmas Crackers",
+      "Nativity play is performed in schools",
+      "Kids put Christmas stocking on fireplace and father Christmas fills them with presents"
+    ],
+    "dish": "Turkey and roast vegetables, Mince pies"
+  },
+  {
+    "countryName": "Romania",
+    "countryCode": "RO",
+    "giver": "Moş Crăciun (Old Man Christmas)",
+    "date": "Dec 25",
+    "greet": "Crăciun Fericit!",
+    "tradition": [
+      "Carol singers go from house to house with a paper or wooden star",
+      "Someone dresses up as a goat and walks with carol singers and dances"
+    ],
+    "dish": "Roast gammon and pork chops"
+  },
+  {
+    "countryName": "Finland",
+    "countryCode": "FI",
+    "giver": "Joulupukki (Santa Claus)",
+    "date": "Dec 24",
+    "greet": "Hyvää joulua!",
+    "tradition": [
+      "Finnish people believes Santa Claus lives in Lapland in mountain Korvatunturi ",
+      "Joulupukki translates as Christmas goat, as traditionally there was a goat asking for presents",
+      "On Christmas day people go to cemetaries to visit graves of family members"
+    ],
+    "dish": "Leg of pork with mashed potato"
+  },
+  {
+    "countryName": "Mexico",
+    "countryCode": "MX",
+    "giver": "El Niñito Dios (baby Jesus) & Santo Clós (Santa Claus)",
+    "date": "Dec 24",
+    "greet": "Feliz Navidad!",
+    "tradition": [
+      "Children go to houses to symbolize Joseph asking for stay for him and Mary",
+      "Star shaped piñatas filled with candy are broken",
+      "December 23rd is in Oaxaca known as 'The Night of Raddishes' when people compete in carvings from raddishes"
+    ],
+    "dish": "Roasted turkey, tamales - meat or bean dish cooked in corn husks or banana leaves"
+  },
+  {
+    "countryName": "USA",
+    "countryCode": "US",
+    "giver": "Santa Claus",
+    "date": "Dec 25",
+    "greet": "Merry Christmas!",
+    "tradition": [
+      "Children leave milk and cookies over night for Santa Claus",
+      "Christmas pickle - a pickle shaped decoration hidden on a Christmas tree, who finds it receives either a reward or good fortune for the next year",
+      "People decorate their houses with light decorations and statues of Santa Claus and his helpers"
+    ],
+    "dish": "Roasted turkey, cranberry sauce, ham"
+  },
+  {
+    "countryName": "South Africa",
+    "countryCode": "ZA",
+    "giver": "Sinterklaas (St Nicholas) & Kersvader (Father Christmas)",
+    "date": "Dec 25",
+    "greet": "Geseënde Kersfees! (Afrikaan) / UKhisimusi omuhle (Zulu) / Le be le keresemese e monate (Sesotho) / Krismesi emnandi (Xhosa)",
+    "tradition": [
+      "In South Africa Christmas happens in summer, that is why people spend time in parks doing outdoor activities",
+      "Christmas time is spent with families relaxing and feasting"
+    ],
+    "dish": "Plum pudding, mince pies, vegetables, turkey, yellow rice, "
+  },
+  {
+    "countryName": "Nigeria",
+    "countryCode": "NG",
+    "giver": "Santa Claus",
+    "date": "Dec 25",
+    "greet": "Barka dà Kirsìmatì! (Hausa) / E ku odun, e ku iye'dun! (Yoruba) / Jabbama be salla Kirismati! (Fulani) / E keresimesi Oma! (Igbo)",
+    "tradition": [
+      "Children get to see Santa Claus on Christmas, he does not sneak in at night",
+      "Fireworks are a part of the Christmas celebrations"
+    ],
+    "dish": "Turkey/beef/goat/sheep, pounded yam, jollof rice pudding, stew"
+  },
+  {
+    "countryName": "Australia",
+    "countryCode": "AU",
+    "giver": "Santa Claus",
+    "date": "Dec 25",
+    "greet": "Merry Christmas",
+    "tradition": [
+      "Becuase Christmas happens in summer, people often barbeque on Boxing day or go camping",
+      "People decorate their houses, some councils even hold competitions "
+    ],
+    "dish": "Turkey, ham, barbeque, pavlova as dessert "
+  }
+]
