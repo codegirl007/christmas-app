@@ -1,8 +1,5 @@
 import "./App.css";
-import { ChristmasDialog } from "./components/Dialog/Dialog";
 
-function App() {
-  return <ChristmasDialog />;
-}
+function App() {}
 
 export default App;
