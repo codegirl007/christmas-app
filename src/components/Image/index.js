@@ -57,16 +57,12 @@ const images = {
   FR: fr,
 };
 
-const Image = ({ countryCode }) => {
-  const Img = images[countryCode];
-  return (
-    <img
-      className="custom-image"
-      src={Img}
-      alt={`christmas in ${countryCode}`}
-    />
-  );
-};
-
+const Image = ({countryCode}) => {
+  const code = countryCode.toLowerCase();
+  const Img = images[code]
+  return(
+    <img className="custom-image"src={Img} alt={`christmas in ${countryCode}`}/>
+  )
+}
 
 export default Image;
