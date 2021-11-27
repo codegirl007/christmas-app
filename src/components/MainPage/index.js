@@ -8,16 +8,21 @@ const MainPage = ({ data }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const url = `http://localhost:3000/#${location.pathname}`;
-  const isDialogOpen = location.pathname === '/' ? false : true;
-  const defaultCountryCode = location.pathname.slice(-2);
-  const [countryCode, setCountryCode] = useState(defaultCountryCode);
+  const isDialogOpen = location.pathname === "/" ? false : true;
+  const urlCountryCode =  isDialogOpen ? location.pathname.slice(-2) : null;
+
   const [dialogOpen, setDialogOpen] = useState(isDialogOpen);
+  const [country, setCountry] = useState(urlCountryCode ? findCountry(urlCountryCode) : null);
 
   const handleCountryClick = (value) => {
-    console.log("country click", value);
-    setCountryCode(value);
     navigate(value);
+    setCountry(findCountry(value));
     setDialogOpen(true);
+  };
+
+  function findCountry(code){
+    const foundCountry = data.find((item) => item.countryCode === code);
+    return foundCountry;
   };
 
   const handleCloseDialog = () => {
@@ -28,12 +33,14 @@ const MainPage = ({ data }) => {
   return (
     <>
       <Map handleCountryClick={handleCountryClick} data={data} />
-      <ChristmasDialog
-        dialogOpen={dialogOpen}
-        onCloseDialog={handleCloseDialog}
-        url={url}
-        countryCode={countryCode}
-      />
+      {country && (
+        <ChristmasDialog
+          dialogOpen={dialogOpen}
+          onCloseDialog={handleCloseDialog}
+          url={url}
+          country={country}
+        />
+      )}
     </>
   );
 };
