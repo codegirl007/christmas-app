@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css'
 
 import au from '../../assets/images/au-image.jpg'
 import fi from '../../assets/images/fi-image.jpg'
@@ -29,9 +30,7 @@ const Image = ({countryCode}) => {
   const code = countryCode.toLowerCase();
   const Img = images[code]
   return(
-    <div>
-      <img src={Img} alt={`christmas in ${countryCode}`} width={300}/>
-    </div>
+      <img className="custom-image"src={Img} alt={`christmas in ${countryCode}`}/>
   )
 }
 

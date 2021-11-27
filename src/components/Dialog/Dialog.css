@@ -7,17 +7,17 @@
   background-size: cover;
 }
 
-.dialog-content {
+.dialog-header {
+  background-color: #0894f1;
+}
+
+.fact-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   grid-gap: 0.5rem;
   width: 100%;
   height: 100%;
-}
-
-.dialog-header {
-  background-color: #0894f1;
+  padding: 1rem 0;
 }
 
 .fact {
@@ -31,8 +31,20 @@
   position: relative;
 }
 
+.fact-row--carol {
+  align-items: baseline;
+}
+
+.fact-content {
+  padding: 0.2rem 1rem;
+}
+
+.fact-label {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
 .fact-text {
-  padding: 1rem;
   font-size: 0.825rem;
   font-weight: 600;
 }
@@ -48,7 +60,11 @@
   flex-shrink: 0;
 }
 
-img {
+.img-container--carol {
+  margin-right: 1rem;
+}
+
+.fact-image {
   width: 2.7rem;
   height: 2.7rem;
 }
