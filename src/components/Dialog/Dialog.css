@@ -1,0 +1,9 @@
+.dialog-content {
+  background: url("./snowflakes.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.dialog-header {
+  background-color: #0894f1;
+}
