@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 export const Countdown = () => {
   const countDownDate = new Date("Dec 24, 2021 18:00:00").getTime();
   const [timeToChristmas, setTimeToChristmas] = useState("");
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
       let now = new Date().getTime();
@@ -22,7 +22,7 @@ export const Countdown = () => {
       }
     }, 1000);
     return () => clearInterval(interval);
-  }, [timeToChristmas]);
+  }, [setTimeToChristmas, countDownDate]);
 
-  return <div>{timeToChristmas}</div>;
+  return <div className="countdown">{timeToChristmas}</div>;
 };
