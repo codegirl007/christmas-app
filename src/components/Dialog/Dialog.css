@@ -52,14 +52,17 @@
 }
 
 .fact-label {
-  font-size: 0.4rem;
+  font-size: 0.92rem;
   font-weight: 400;
 }
 
 .fact-text {
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-weight: 600;
-  max-width: 16rem;
+}
+
+.fact-listed{
+  margin-left: 1.5rem;
 }
 
 .img-container {
@@ -86,4 +89,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.share-prompt {
+  line-height: 270%;
+  font-weight: 500;
 }

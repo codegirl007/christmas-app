@@ -44,7 +44,7 @@ const images = {
   CN: cn,
   CZ: cz,
   EG: eg,
-  JG: jp,
+  JP: jp,
   MG: mg,
   UA: ua,
   VE: ve,

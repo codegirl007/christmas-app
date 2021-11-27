@@ -44,7 +44,7 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
         open={dialogOpen}
         onClose={onCloseDialog}
         className="dialog-body"
-        maxWidth="xs"
+        maxWidth="sm"
       >
         <div className="dialog-container">
           <DialogTitle className="dialog-header">
@@ -62,7 +62,7 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
                   <img className="fact-image" src={gift} alt="giver" />
                 </div>
                 <div className="fact-content">
-                  <p className="fact-label">Who brings presents</p>
+                  <p className="fact-label">Gifts are brought by</p>
                   <p className="fact-text">{country.giver}</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
                   <img className="fact-image" src={calendar} alt="calendar" />
                 </div>
                 <div className="fact-content">
-                  <p className="fact-label">When are Christmas celebrated</p>
+                  <p className="fact-label">Christmas date</p>
                   <p className="fact-text">{country.date}</p>
                 </div>
               </div>
@@ -99,9 +99,11 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
                 </div>
                 <div className="fact-content">
                   <p className="fact-label">Traditions</p>
+                  <ul>
                   {country.tradition.map((item, index) => (
-                    <p key={index} className="fact-text">{item}</p>
+                    <li key={index} className="fact-text fact-listed">{item}</li>
                   ))}
+                  </ul>
                 </div>
               </div>
               <div className="fact-row fact-row--carol">
@@ -116,14 +118,17 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
               </div>
           </DialogContent>
           <footer className={classes.footer}>
+            <span className="share-prompt">
+              Did you find something new? Share it here:
+            </span>
             <FacebookShareButton url={url}>
-              <FacebookIcon round={true} />
+              <FacebookIcon round={true} size={45}/>
             </FacebookShareButton>
             <LinkedinShareButton url={url}>
-              <LinkedinIcon round={true} />
+              <LinkedinIcon round={true} size={45}/>
             </LinkedinShareButton>
             <TwitterShareButton url={url}>
-              <TwitterIcon round={true} />
+              <TwitterIcon round={true} size={45}/>
             </TwitterShareButton>
           </footer>
         </div>
