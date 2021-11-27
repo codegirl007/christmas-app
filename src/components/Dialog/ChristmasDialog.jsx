@@ -11,6 +11,7 @@ import choir from "../../assets/icons/choir.png";
 import jesus from "../../assets/icons/jesus.png";
 import language from "../../assets/icons/language.png";
 import "./Dialog.css";
+import Image from '../Image'
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -31,8 +32,10 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const ChristmasDialog = ({ dialogOpen, onCloseDialog, url }) => {
+export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, countryCode}) => {
   const classes = useStyles();
+  console.log("dialog component", countryCode)
+
   return (
     <>
       <Dialog open={dialogOpen} onClose={onCloseDialog} className="dialog-body">
@@ -85,6 +88,9 @@ export const ChristmasDialog = ({ dialogOpen, onCloseDialog, url }) => {
                 width="60%"
                 height="0%"
               />
+            </div>
+            <div className="fact-row">
+              <Image countryCode={countryCode} />
             </div>
             <div className="social-media"></div>
           </DialogContent>
