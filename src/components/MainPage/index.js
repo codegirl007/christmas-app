@@ -7,7 +7,8 @@ import { useLocation } from "react-router-dom";
 const MainPage = ({ data }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const url = `http://localhost:3000/#${location.pathname}`;
+  const urlBase = window.location.origin;
+  const url = `${urlBase}/#${location.pathname}`;
   const isDialogOpen = location.pathname === "/" ? false : true;
   const urlCountryCode =  isDialogOpen ? location.pathname.slice(-2) : null;
 
