@@ -20,6 +20,17 @@
   padding: 1rem 0;
 }
 
+.dialog-header {
+  background-color: #0894f1;
+
+}
+
+.dialog-header > h2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .fact {
   display: flex;
 }
