@@ -194,8 +194,8 @@
   },
   {
     "countryName": "Poland",
-    "countryCode": "RU",
-    "giver": "depending on region:  Swiety Mikolaj (St. Nicholas), Dziadek Mróz (Ded Moroz/Grandfather Frost), Gwiazdor (the Starman), Dzieciątko (the Baby Jesus), Aniołek (Little Angel), Gwiazdka (Little Star)",
+    "countryCode": "PL",
+    "giver": "Depending on region:  Swiety Mikolaj (St. Nicholas), Dziadek Mróz (Ded Moroz/Grandfather Frost), Gwiazdor (the Starman), Dzieciątko (the Baby Jesus), Aniołek (Little Angel), Gwiazdka (Little Star)",
     "date": "Dec 24",
     "greet": "Wesołych Świąt Bożego Narodzenia!",
     "tradition": [
