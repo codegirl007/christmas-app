@@ -50,55 +50,77 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, countryCode}) =
             </IconButton>
           </DialogTitle>
           <DialogContent className="dialog-content">
-            <div className="fact">
-              <div className="img-container">
-                <img src={gift} alt="giver" />
+            <div className="fact-wrapper">
+              <div className="fact">
+                <div className="img-container">
+                  <img className="fact-image" src={gift} alt="giver" />
+                </div>
+                <div className="fact-content">
+                  <p className="fact-label">Who brings presents</p>
+                  <p className="fact-text">
+                    Jezisek (Baby Jesus) is a Christmas gift-giving figure
+                  </p>
+                </div>
               </div>
-              <p className="fact-text">
-                Jezisek (Baby Jesus) is a Christmas gift-giving figure
-              </p>
-            </div>
-            <div className="fact">
-              <div className="img-container">
-                <img src={dinner} alt="dish" />
+              <div className="fact">
+                <div className="img-container">
+                  <img className="fact-image" src={dinner} alt="dish" />
+                </div>
+                <div className="fact-content">
+                  <p className="fact-label">Traditional dish</p>
+                  <p className="fact-text">
+                    Carp and Potato Salad
+                  </p>
+                  </div>
               </div>
-              <p className="fact-text">Carp and Potato Salad</p>
-            </div>
-            <div className="fact">
-              <div className="img-container">
-                <img src={calendar} alt="calendar" />
+              <div className="fact">
+                <div className="img-container">
+                  <img className="fact-image" src={calendar} alt="calendar" />
+                </div>
+                <div className="fact-content">
+                  <p className="fact-label">When are Christmas celebrated</p>
+                  <p className="fact-text">
+                    December 24
+                  </p>
+                  </div>
               </div>
-              <p className="fact-text">December 24</p>
-            </div>
-            <div className="fact">
-              <div className="img-container">
-                <img src={language} alt="language" />
+              <div className="fact">
+                <div className="img-container">
+                  <img className="fact-image" src={language} alt="language" />
+                </div>
+                <div className="fact-content">
+                  <p className="fact-label">How to say Merry Christmas!</p>
+                  <p className="fact-text">
+                    Veselé Vánoce!
+                  </p>
+                  </div>
               </div>
-              <p className="fact-text">Veselé Vánoce!</p>
-            </div>
-            <div className="fact-row">
-              <div className="img-container">
-                <img src={jesus} alt="tradition" />
+              <div className="fact-row">
+                <div className="img-container">
+                  <img className="fact-image" src={jesus} alt="tradition" />
+                </div>
+                <div className="fact-content">
+                  <p className="fact-label">Traditions</p>
+                  <p className="fact-text">
+                  The Floating of Walnut Shells, The Cutting of the Apple, The
+                  Pouring of Lead, Fish Scales under the Plate
+                  </p>
+                </div>
               </div>
-              <p className="fact-text">
-                The Floating of Walnut Shells, The Cutting of the Apple, The
-                Pouring of Lead, Fish Scales under the Plate
-              </p>
-            </div>
-            <div className="fact-row">
-              <div className="img-container">
-                <img src={choir} alt="carol" />
+              <div className="fact-row fact-row--carol">
+                <div className="img-container img-container--carol">
+                  <img className="fact-image" src={choir} alt="carol" />
+                </div>
+                  <AudioPlayer
+                    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                    width="60%"
+                    height="0%"
+                  />
               </div>
-              <AudioPlayer
-                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-                width="60%"
-                height="0%"
-              />
-            </div>
-            <div className="fact-row">
-              <Image countryCode={countryCode} />
-            </div>
-            <div className="social-media"></div>
+              </div>
+              <div className="country-image">
+                <Image countryCode={countryCode} />
+              </div>
           </DialogContent>
           <footer className={classes.footer}>
             <FacebookShareButton url={url}>

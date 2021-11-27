@@ -1,24 +1,21 @@
-import React from 'react';
-import WorldMap from 'react-svg-worldmap';
+import React from "react";
+import WorldMap from "react-svg-worldmap";
 
-const Map = ({handleCountryClick, data}) => {
-
+const Map = ({ handleCountryClick, data }) => {
   const mapData = data.map((item) => {
-    return (
-      {
-        country:(item.countryCode),
-        value: 'Christmas'
-      }
-    )});
+    return {
+      country: item.countryCode,
+      value: "Christmas",
+    };
+  });
 
   const onCountryClick = (value) => {
-    handleCountryClick(value.countryCode)
-  }
-
+    handleCountryClick(value.countryCode);
+  };
 
   return (
     <WorldMap
-      color="green"
+      color="#0894F1"
       value-suffix="people"
       size="lg"
       data={mapData}
@@ -27,6 +24,6 @@ const Map = ({handleCountryClick, data}) => {
       valuePrefix=" - "
       valueSuffix="🎄"
     />
-  )
-}
- export default Map;
+  );
+};
+export default Map;
