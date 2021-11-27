@@ -36,11 +36,11 @@ const images = {
   fr: fr,
 };
 
-const Image = ({ countryCode }) => {
+const Image = ({countryCode}) => {
   const code = countryCode.toLowerCase();
   const Img = images[code]
   return(
-      <img className="custom-image"src={Img} alt={`christmas in ${countryCode}`}/>
+    <img className="custom-image"src={Img} alt={`christmas in ${countryCode}`}/>
   )
 }
 
