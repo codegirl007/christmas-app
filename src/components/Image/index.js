@@ -61,3 +61,6 @@ const Image = ({countryCode}) => {
     <img className="custom-image"src={Img} alt={`christmas in ${countryCode}`}/>
   )
 }
+
+
+export default Image;
