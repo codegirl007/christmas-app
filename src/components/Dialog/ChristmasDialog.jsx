@@ -14,7 +14,7 @@ import choir from "../../assets/icons/choir.png";
 import jesus from "../../assets/icons/jesus.png";
 import language from "../../assets/icons/language.png";
 import "./Dialog.css";
-import Image from '../Image'
+import Image from "../Image";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -40,7 +40,12 @@ export const ChristmasDialog = ({dialogOpen, onCloseDialog, url, country}) => {
 
   return (
     <>
-      <Dialog open={dialogOpen} onClose={onCloseDialog} className="dialog-body">
+      <Dialog
+        open={dialogOpen}
+        onClose={onCloseDialog}
+        className="dialog-body"
+        maxWidth="xs"
+      >
         <div className="dialog-container">
           <DialogTitle className="dialog-header">
             <Typography>
